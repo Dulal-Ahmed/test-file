@@ -44,18 +44,18 @@
                                 <!-- <li class="menu_item "><a href="#why_green_sec" class="menu_list super_menu ">Why Green Space</a>
                                 </li> -->
 
-                                <li class="menu_item drop_main_wrap  icon" class="onclick-menu"><a href="#0" class="super_menu  dropdown"> Features </a>
-                                    <div class="megamenu_1 megamenu_wrap">
+                                <li class="menu_item drop_main_wrap  icon" class="onclick-menu" onmouseover="clickMeny()"><a href="#0" class="super_menu  dropdown"> Features </a>
+                                    <div class="megamenu_1 megamenu_wrap menuHandle">
                                         <div class="top_arrow_wrap">
                                             <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M17.974 0L35.272 29.961H0.676006L17.974 0Z" fill="white"/>
                                             </svg>
                                         </div>
 
-                                        <div class="container">
-                                            <div class="cm_row">
+                                        <div class="container ">
+                                            <div class="cm_row ">
                                                 <div class="cm_col_5">
-                                                    <div class="inn_menu_list">
+                                                    <div class="inn_menu_list menuHandle1">
                                                         <a href="#greenspacebusinessmanager" class="inn_menu_item"><span></span> <p>Green Space Business Manager</p></a>
                                                         <a href="#AIPoweredAutomaticRouting" class="inn_menu_item"><span></span> <p>AI Powered Automatic Routing</p></a>
                                                         <a href="#AutomaticEmails" class="inn_menu_item"><span></span> <p>Automatic Emails</p></a>
@@ -73,7 +73,7 @@
                                                 </div>
                                                 <div class="cm_col_border"></div>
                                                 <div class="cm_col_6">
-                                                    <div class="inn_menu_list">
+                                                    <div class="inn_menu_list menuHandle2">
                                                         <a href="#EmailTrackingandReadReceipts" class="inn_menu_item"><span></span> <p>Email Tracking and Read Receipts</p></a>
                                                         <a href="#EasilyGenerateEstimates,Invoices,andStatements" class="inn_menu_item"><span></span> <p>Easily Generate Estimates, Invoices, and Statements</p></a>
                                                         <a href="#MotivateYourTeamwithSalesandProductionBoards" class="inn_menu_item"><span></span> <p>Motivate Your Team with Sales and Production Boards</p></a>
@@ -890,7 +890,38 @@
 
     </div>
 
+    <script>
+        
+       const menuHandle = document.querySelector('.menuHandle');
+        const menuHandle1 = document.querySelector('.menuHandle1');
+        const childern1 = menuHandle1.childNodes;
+        for(x of childern1){
+            x.addEventListener("click", myFunction1);
+        function myFunction1() {
+        menuHandle.style.display = "none";  
+          
+}
+        }
+        const menuHandle2 = document.querySelector('.menuHandle2');
+        const childern2 = menuHandle2.childNodes;
+        for(z of childern2){
+            z.addEventListener("click", myFunction2);
+        function myFunction2() {
+            menuHandle.style.display = "none";  
+        
+}
+        }
+        console.log(x);
+        console.log(z);
 
+  
+       
+     function clickMeny(){
+        menuHandle.style.display = "block";
+     }
+     
+      
+    </script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script>
