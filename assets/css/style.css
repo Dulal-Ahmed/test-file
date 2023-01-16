@@ -270,15 +270,15 @@ header {
     padding: 40px 0 35px;
     max-width: 100%;
     right: 20px;
-	top: 120px;
-	transition: all 0.3s ease-in-out 0s;
-	-webkit-transition: all 0.3s ease-in-out 0s;
+	top: 98px !important;
+	transition: all 0.3s ease-in-out 0s in !important;
+	-webkit-transition: all 0.3s ease-in-out 0s in !important;
 	text-align: left;
 }
 .menu_item:hover .megamenu_wrap {
 	top: 120px;
 	opacity: 1;
-     display: block;
+    display: block;
 }
 .top_arrow_wrap{
 	position: absolute;
